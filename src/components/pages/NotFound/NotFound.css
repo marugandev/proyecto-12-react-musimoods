@@ -1,0 +1,24 @@
+.not-found {
+  min-height: 90svh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--mu-font-family-primary);
+  gap: var(--mo-gap-md);
+}
+
+.not-found-title {
+  font-size: var(--mo-font-size-5xl);
+  font-weight: var(--mo-font-weight-semibold);
+}
+
+.not-found-subtitle {
+  font-family: var(--mu-font-family-secondary);
+  font-weight: var(--mo-font-weight-normal);
+}
+
+.not-found-button {
+  margin-top: var(--mo-margin-xl);
+}

@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
+
+:root {
+  /* fonts */
+  --mu-font-family-primary: "Merriweather", serif;
+  --mu-font-family-secondary: "Inconsolata", monospace;
+
+  /* font sizes */
+  --mo-font-size-xs: 0.75rem; /* 12px */
+  --mo-font-size-sm: 0.875rem; /* 14px */
+  --mo-font-size-base: 1rem; /* 16px */
+  --mo-font-size-lg: 1.125rem; /* 18px */
+  --mo-font-size-xl: 1.25rem; /* 20px */
+  --mo-font-size-2xl: 1.5rem; /* 24px */
+  --mo-font-size-3xl: 1.875rem; /* 30px */
+  --mo-font-size-4xl: 2.25rem; /* 36px */
+  --mo-font-size-5xl: 3rem; /* 48px */
+
+  /* font weight */
+  --mo-font-weight-light: 300;
+  --mo-font-weight-regular: 400;
+  --mo-font-weight-medium: 500;
+  --mo-font-weight-semibold: 600;
+  --mo-font-weight-bold: 700;
+
+  /* spacings */
+  --mo-spacing-wave: 3px;
+  --mo-spacing-xxs: 4px;
+  --mo-spacing-xs: 8px;
+  --mo-spacing-sm: 12px;
+  --mo-spacing-md: 16px;
+  --mo-spacing-lg: 24px;
+  --mo-spacing-xl: 32px;
+  --mo-spacing-2xl: 40px;
+  --mo-spacing-3xl: 48px;
+  --mo-spacing-4xl: 64px;
+  --mo-spacing-5xl: 80px;
+
+  /* paddings */
+  --mo-padding-xxs: var(--mo-spacing-xxs);
+  --mo-padding-xs: var(--mo-spacing-xs);
+  --mo-padding-sm: var(--mo-spacing-sm);
+  --mo-padding-md: var(--mo-spacing-md);
+  --mo-padding-lg: var(--mo-spacing-lg);
+  --mo-padding-xl: var(--mo-spacing-xl);
+
+  /* margins */
+  --mo-margin-xs: var(--mo-spacing-xs);
+  --mo-margin-sm: var(--mo-spacing-sm);
+  --mo-margin-md: var(--mo-spacing-md);
+  --mo-margin-lg: var(--mo-spacing-lg);
+  --mo-margin-xl: var(--mo-spacing-xl);
+
+  /* gaps */
+  --mo-gap-xxs: var(--mo-spacing-xxs);
+  --mo-gap-xs: var(--mo-spacing-xs);
+  --mo-gap-sm: var(--mo-spacing-sm);
+  --mo-gap-md: var(--mo-spacing-md);
+  --mo-gap-lg: var(--mo-spacing-lg);
+  --mo-gap-xl: var(--mo-spacing-xl);
+
+  /* border radius */
+  --mo-border-radius-xs: 4px;
+  --mo-border-radius-sm: 8px;
+  --mo-border-radius-md: 12px;
+  --mo-border-radius-lg: 16px;
+  --mo-border-radius-xl: 24px;
+  --mo-border-radius-round: 50%;
+
+  /* line heights */
+  --mo-line-height-xs: 1.2;
+  --mo-line-height-sm: 1.4;
+  --mo-line-height-md: 1.6;
+  --mo-line-height-lg: 1.8;
+  --mo-line-height-xl: 2;
+
+  /* letters spacings */
+  --mo-letter-spacing-tight: -0.02em;
+  --mo-letter-spacing-normal: 0em;
+  --mo-letter-spacing-wide: 0.05em;
+
+  /* colors */
+  --mo-color-black: #222222;
+  --mo-color-black-rgba: rgba(34, 34, 34, 0.7);
+  --mo-color-white: #f8f8f8;
+  --mo-color-grey-light: #ededed;
+  --mo-color-grey-medium: #b7b7b7;
+
+  --mo-color-primary: var(--mo-color-black);
+  --mo-color-background: var(--mo-color-white);
+  --mo-color-secondary-bg: var(--mo-color-gray-light);
+  --mo-color-border: var(--mo-color-gray-medium);
+  --mo-color-text-secondary: var(--mo-color-gray-medium);
+
+  /* moods colors */
+  --mo-mood-color-happy: #ffd166; /* Amarillo vibrante */
+  --mo-mood-color-sad: #5c6ac4; /* Azul medio con un toque melancólico */
+  --mo-mood-color-motivated: #ef476f; /* Rojo intenso y enérgico */
+  --mo-mood-color-relaxed: #06d6a0; /* Verde turquesa calmante */
+  --mo-mood-color-focused: #118ab2; /* Azul profundo, ayuda a la concentración */
+  --mo-mood-color-energetic: #ff6b35; /* Naranja fuerte y vibrante */
+  --mo-mood-color-nostalgic: #8d6a9f; /* Morado apagado con toque vintage */
+  --mo-mood-color-romantic: #e63946; /* Rojo pasión, pero no muy agresivo */
+  --mo-mood-color-mysterious: #22223b; /* Azul noche casi negro, enigmático */
+  --mo-mood-color-mysterious-arrow: var(--mo-color-white);
+}
+
+/*  [data-theme="dark"] {
+    --mo-color-primary: var(--mo-color-white);
+    --mo-color-background: var(--mo-color-black);
+    --mo-color-secondary-bg: var(--mo-color-gray-medium);
+    --mo-color-border: var(--mo-color-gray-light);
+    --mo-color-text-secondary: var(--mo-color-gray-light);
+  } */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  /* Others */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+#root {
+  position: relative;
+  min-height: 100svh;
+  /* max-width: 1280px; */
+  /* padding: 0 var(--mo-spacing-md); */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  background-color: var(--mo-color-background);
+}
+
+p {
+  font-size: var(--mo-font-size-base);
+  font-weight: var(--mo-font-weight-regular);
+  line-height: var(--mo-line-height-md);
+}
+
+/* general animations */
+.page-enter-animation {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* mobiles */
+@media (max-width: 640px) {
+  :root {
+    --mo-font-size-base: 0.875rem; /* 14px */
+    --mo-spacing-md: 12px;
+  }
+}
+
+/* tablets */
+@media (max-width: 1024px) {
+  :root {
+    --mo-font-size-base: 0.9375rem; /* 15px */
+    --mo-spacing-md: 14px;
+  }
+}
+
+/* descktops */
+@media (min-width: 1280px) {
+  :root {
+    --mo-font-size-base: 1.125rem; /* 18px */
+    --mo-spacing-md: 20px;
+  }
+}

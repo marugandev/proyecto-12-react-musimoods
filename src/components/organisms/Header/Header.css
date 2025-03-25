@@ -1,0 +1,17 @@
+.header {
+  min-height: 10svh;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 var(--mo-spacing-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-menu {
+  z-index: 9999;
+  width: 68.55px;
+  display: flex;
+  place-content: center;
+}

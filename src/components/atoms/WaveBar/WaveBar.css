@@ -1,0 +1,21 @@
+.wave-bar-container {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--mo-spacing-wave);
+}
+
+.wave-bar {
+  width: 10px;
+  height: 10px;
+  background-color: var(--mo-color-black);
+  animation: waveBar 1s ease-in-out infinite alternate;
+}
+
+@keyframes waveBar {
+  0% {
+    height: 10px;
+  }
+  100% {
+    height: 20px;
+  }
+}

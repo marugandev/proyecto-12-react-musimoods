@@ -1,0 +1,32 @@
+.song-card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: var(--mo-gap-xs);
+}
+
+.song-card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.song-card-figcaption {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--mo-gap-xs);
+  padding: var(--mo-padding-md);
+}
+
+.song-card-button {
+  margin: 0 var(--mo-margin-md) var(--mo-margin-md) var(--mo-margin-md);
+}
+
+@media (max-width: 460px) {
+  .song-card-list {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}

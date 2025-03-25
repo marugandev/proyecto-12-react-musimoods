@@ -1,0 +1,12 @@
+.button {
+  font-family: var(--mu-font-family-primary);
+  padding: var(--mo-padding-sm) var(--mo-padding-md);
+  border: none;
+  cursor: pointer;
+  /* border-radius: var(--mo-border-radius-md); */
+}
+
+.button.secondary {
+  color: var(--mo-color-background);
+  background-color: var(--mo-color-primary);
+}

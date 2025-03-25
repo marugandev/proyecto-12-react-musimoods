@@ -1,0 +1,27 @@
+.step-bar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: var(--mo-color-grey-light);
+  margin-bottom: var(--mo-margin-xs);
+  padding: var(--mo-padding-xxs) 0;
+  overflow: hidden;
+  mix-blend-mode: difference;
+}
+
+.step-bar-text {
+  width: fit-content;
+  display: inline-block;
+  white-space: nowrap;
+  font-family: var(--mu-font-family-secondary);
+  animation: moveStepBar 40s linear infinite;
+}
+
+@keyframes moveStepBar {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

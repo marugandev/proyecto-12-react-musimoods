@@ -1,0 +1,21 @@
+.main {
+  min-height: 90svh;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 var(--mo-spacing-md);
+  margin-bottom: var(--mo-spacing-xl);
+}
+
+.outlet {
+  animation: fade 2s ease-in-out;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

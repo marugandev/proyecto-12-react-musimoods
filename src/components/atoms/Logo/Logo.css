@@ -1,0 +1,14 @@
+.logo-container {
+  display: flex;
+  align-items: baseline;
+  gap: var(--mo-gap-xs);
+}
+
+.logo-link {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: var(--mu-font-family-primary);
+  color: var(--mo-color-primary);
+}

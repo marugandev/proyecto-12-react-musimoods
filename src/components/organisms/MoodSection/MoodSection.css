@@ -1,0 +1,14 @@
+.mood-section {
+  min-height: 100%;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: var(--mo-gap-xs);
+  /*   background-color: aqua; */
+}
+
+@media (max-width: 460px) {
+  .mood-section {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}

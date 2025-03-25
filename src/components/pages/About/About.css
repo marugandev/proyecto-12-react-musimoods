@@ -1,0 +1,17 @@
+.about {
+  color: var(--mo-color-primary);
+  font-family: var(--mu-font-family-primary);
+  display: flex;
+  flex-direction: column;
+  gap: var(--mo-gap-md);
+  text-wrap: balance;
+}
+
+.about-description {
+  font-family: var(--mu-font-family-secondary);
+}
+
+.about-description-span {
+  background-color: var(--mo-color-primary);
+  color: var(--mo-color-white);
+}
