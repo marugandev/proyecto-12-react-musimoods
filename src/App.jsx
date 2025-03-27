@@ -1,12 +1,13 @@
 import "./App.css";
+
 import { Route, Routes } from "react-router-dom";
 
 import MainLayout from "./components/layouts/MainLayout";
-import Home from "./components/pages/Home/Home";
-import MoodSongs from "./components/pages/MoodSongs/MoodSongs";
-import Favourites from "./components/pages/Favourites/Favourites";
-import About from "./components/pages/About/About";
-import NotFound from "./components/pages/NotFound/NotFound";
+import Home from "./pages/Home/Home";
+import Songs from "./pages/Songs/Songs";
+import Favourites from "./pages/Favourites/Favourites";
+import About from "./pages/About/About";
+import NotFound from "./pages/NotFound/NotFound";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
-          <Route path="/moodSongs" element={<MoodSongs />} />
+          <Route path="/songs/:moodName" element={<Songs />} />
           <Route path="/favourites" element={<Favourites />} />
           <Route path="/about" element={<About />} />
           <Route path="/*" element={<NotFound />} />

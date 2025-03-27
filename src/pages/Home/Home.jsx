@@ -1,6 +1,6 @@
-import MoodSection from "../../organisms/MoodSection/MoodSection";
 import "./Home.css";
-import React from "react";
+
+import MoodSection from "../../components/organisms/MoodSection/MoodSection";
 
 const Home = () => {
   return <MoodSection />;

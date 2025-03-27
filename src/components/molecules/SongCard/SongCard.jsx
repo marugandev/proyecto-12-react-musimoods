@@ -1,14 +1,17 @@
 import "./SongCard.css";
-import React, { useReducer } from "react";
+
 import Button from "../../atoms/Button/Button";
-import { INITIAL_STATE, moodReducer } from "../../../reducers/mood.reducer";
+import { useMood } from "../../../contexts/moodContext";
+import { types } from "../../../reducers/mood.reducer";
 
 const SongCard = ({ mood }) => {
   console.log("Render SongCard");
-  console.log("SongCard", mood);
 
-  const [state, dispatch] = useReducer(moodReducer, INITIAL_STATE);
-  console.log("state", state);
+  const { state, dispatch } = useMood();
+
+  const isFavourite = (songId) => {
+    return state.favourites.some((m) => m.songs.some((s) => s.id === songId));
+  };
 
   return (
     <ul className="song-card-list">
@@ -35,16 +38,25 @@ const SongCard = ({ mood }) => {
             <p>| [{song.genre}]</p>
           </figcaption>
           <Button
-            className={`song-card-button ${song.favourite ? "" : "secondary"}`}
-            text={song.favourite ? "- Favorito" : "+ Favorito"}
+            className={`song-card-button ${
+              isFavourite(song.id) ? "" : "secondary"
+            }`}
+            text={`${isFavourite(song.id) ? "- Favorito" : "+ Favorito"}`}
             onClick={() => {
-              song.favourite = !song.favourite;
-              /* REVISAR MUTABLE */
-              if (song.favourite) {
-                dispatch({ type: "ADD_FAVOURITE", payload: song });
-              } else {
-                dispatch({ type: "REMOVE_FAVOURITE", payload: song });
-              }
+              isFavourite(song.id)
+                ? dispatch({
+                    type: types.REMOVE_FAVOURITE,
+                    payload: {
+                      song: song
+                    }
+                  })
+                : dispatch({
+                    type: types.ADD_FAVOURITE,
+                    payload: {
+                      mood: mood,
+                      song: song
+                    }
+                  });
             }}
           />
         </li>

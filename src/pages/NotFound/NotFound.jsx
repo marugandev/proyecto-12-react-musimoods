@@ -1,8 +1,8 @@
 import "./NotFound.css";
 import React from "react";
 
-import useGoBack from "../../../hooks/useGoBack";
-import Button from "../../atoms/Button/Button";
+import useGoBack from "../../hooks/useGoBack";
+import Button from "../../components/atoms/Button/Button";
 
 const NotFound = () => {
   const goBack = useGoBack();

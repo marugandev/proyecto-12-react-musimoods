@@ -1,69 +1,66 @@
-import { moods } from "../data/moods";
-
 export const INITIAL_STATE = {
-  moods: moods,
-  favourites: JSON.parse(localStorage.getItem("favourites")) || []
+  favourites: JSON.parse(localStorage.getItem("favourites") || "[]")
 };
-/* favourites {
-  mood: {
-  id
-  name
-  categ...
-  songs: [{
-    id
-    name
-    ...
-    favourite: true }]
-}
-} */
+
+export const types = {
+  ADD_FAVOURITE: "ADD_FAVOURITE",
+  REMOVE_FAVOURITE: "REMOVE_FAVOURITE",
+  FILTER_MOOD: "FILTER_MOOD",
+  CLEAR_FAVOURITES: "CLEAR_FAVOURITE"
+};
 
 export const moodReducer = (state, action) => {
   let updatedFavourites;
+  const { mood, song } = action.payload || {};
 
   switch (action.type) {
-    case "GET_FAVOURITES":
-      return {
-        favourites: JSON.parse(localStorage.getItem("favourites")) || []
-      };
+    case types.ADD_FAVOURITE:
+      updatedFavourites = [...state.favourites];
+      const existingMood = updatedFavourites.find((m) => m.id === mood.id);
 
-    case "ADD_FAVOURITE":
-      updatedFavourites = [
-        ...state.favourites,
-        {
-          ...action.payload
+      if (existingMood) {
+        const existingSong = existingMood.songs.some((s) => s.id === song.id);
+        if (!existingSong) {
+          existingMood.songs.push(song);
         }
-      ];
+      } else {
+        updatedFavourites.push({
+          ...mood,
+          songs: [song]
+        });
+      }
+
       localStorage.setItem("favourites", JSON.stringify(updatedFavourites));
+
       return {
         ...state,
         favourites: updatedFavourites
       };
 
-    case "REMOVE_FAVOURITE":
-      updatedFavourites = state.favourites.filter(
-        (song) => song.id !== action.payload.id
-      );
+    case types.REMOVE_FAVOURITE:
+      updatedFavourites = state.favourites
+        .map((m) => ({
+          ...m,
+          songs: m.songs.filter((s) => s.id !== song.id)
+        }))
+        .filter((m) => m.songs.length > 0);
+
       localStorage.setItem("favourites", JSON.stringify(updatedFavourites));
+
       return {
         ...state,
         favourites: updatedFavourites
       };
 
-    case "FILTER_FAVOURITES_BY_MOOD":
-      const filteredFavourites = state.favourites.filter(
-        (fav) => fav.mood.id === action.payload.moodId
-      );
+    case types.FILTER_MOOD:
       return {
         ...state,
-        favourites: filteredFavourites
+        favourites: state.favourites.filter((fav) => fav.id === mood.id)
       };
 
-    case "CLEAR_FAVOURITES":
+    case types.CLEAR_FAVOURITES:
       localStorage.removeItem("favourites");
-      return {
-        ...state,
-        favourites: []
-      };
+      return INITIAL_STATE;
 
     default:
       return state;

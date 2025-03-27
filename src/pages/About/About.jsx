@@ -14,7 +14,7 @@ const About = () => {
         aleatoria basados en el estado de ánimo que elijas.
       </p>
       <p className="about-description">
-        Solo <span className="about-description-span">selecciona </span>un{" "}
+        Solo <span className="about-description-span">selecciona</span> un{" "}
         <span className="about-description-span">estado de ánimo</span> y {""}
         <span className="about-description-span">disfruta</span> de canciones
         recomendadas que se ajusten a ese sentimiento.

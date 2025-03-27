@@ -18,8 +18,7 @@ export const moods = [
         genre: "Pop",
         year: 2013,
         duration: "3:53",
-        youtubeId: "ZbZSe6N_BXs",
-        favourite: false
+        youtubeId: "ZbZSe6N_BXs"
       },
       {
         id: uuidv4(),
@@ -28,8 +27,7 @@ export const moods = [
         genre: "Pop",
         year: 2014,
         duration: "4:30",
-        youtubeId: "OPf0YbXqDm0",
-        favourite: false
+        youtubeId: "OPf0YbXqDm0"
       },
       {
         id: uuidv4(),
@@ -38,8 +36,7 @@ export const moods = [
         genre: "Dance",
         year: 2013,
         duration: "4:07",
-        youtubeId: "IcrbM1l_BoI",
-        favourite: false
+        youtubeId: "IcrbM1l_BoI"
       },
       {
         id: uuidv4(),
@@ -69,8 +66,7 @@ export const moods = [
         genre: "Rock Alternativo",
         year: 2005,
         duration: "4:55",
-        youtubeId: "k4V3Mo61fJM",
-        favourite: false
+        youtubeId: "k4V3Mo61fJM"
       },
       {
         id: uuidv4(),
@@ -79,8 +75,7 @@ export const moods = [
         genre: "Rock Alternativo",
         year: 1992,
         duration: "4:19",
-        youtubeId: "XFkzRNyygfk",
-        favourite: false
+        youtubeId: "XFkzRNyygfk"
       },
       {
         id: uuidv4(),
@@ -89,8 +84,7 @@ export const moods = [
         genre: "Indie",
         year: 2005,
         duration: "3:09",
-        youtubeId: "NDHY1D0tKRA",
-        favourite: false
+        youtubeId: "NDHY1D0tKRA"
       },
       {
         id: uuidv4(),
@@ -99,8 +93,7 @@ export const moods = [
         genre: "Indie",
         year: 2012,
         duration: "5:05",
-        youtubeId: "mtf7hC17IBM",
-        favourite: false
+        youtubeId: "mtf7hC17IBM"
       }
     ]
   },
@@ -121,8 +114,7 @@ export const moods = [
         genre: "Rock",
         year: 1982,
         duration: "4:05",
-        youtubeId: "btPJPFnesV4",
-        favourite: false
+        youtubeId: "btPJPFnesV4"
       },
       {
         id: uuidv4(),
@@ -131,8 +123,7 @@ export const moods = [
         genre: "Rock",
         year: 1981,
         duration: "4:11",
-        youtubeId: "1k8craCGpgs",
-        favourite: false
+        youtubeId: "1k8craCGpgs"
       },
       {
         id: uuidv4(),
@@ -141,8 +132,7 @@ export const moods = [
         genre: "Electrónica",
         year: 2007,
         duration: "5:12",
-        youtubeId: "PsO6ZnUZI0g",
-        favourite: false
+        youtubeId: "PsO6ZnUZI0g"
       },
       {
         id: uuidv4(),
@@ -151,8 +141,7 @@ export const moods = [
         genre: "Electrónica",
         year: 2013,
         duration: "4:07",
-        youtubeId: "IcrbM1l_BoI",
-        favourite: false
+        youtubeId: "IcrbM1l_BoI"
       }
     ]
   },
@@ -173,8 +162,7 @@ export const moods = [
         genre: "Ambiental",
         year: 2011,
         duration: "8:00",
-        youtubeId: "UfcAVejslrU",
-        favourite: false
+        youtubeId: "UfcAVejslrU"
       },
       {
         id: uuidv4(),
@@ -183,8 +171,7 @@ export const moods = [
         genre: "Chillout",
         year: 2016,
         duration: "9:58",
-        youtubeId: "nOubjLM9Cbc",
-        favourite: false
+        youtubeId: "nOubjLM9Cbc"
       },
       {
         id: uuidv4(),
@@ -193,8 +180,7 @@ export const moods = [
         genre: "Jazz",
         year: 1959,
         duration: "5:24",
-        youtubeId: "vmDDOFXSgYk",
-        favourite: false
+        youtubeId: "vmDDOFXSgYk"
       },
       {
         id: uuidv4(),
@@ -203,8 +189,7 @@ export const moods = [
         genre: "Ambiental",
         year: 1983,
         duration: "4:17",
-        youtubeId: "d1eKTR3vn4A",
-        favourite: false
+        youtubeId: "d1eKTR3vn4A"
       }
     ]
   },
@@ -231,8 +216,7 @@ export const moods = [
         genre: "Clásica",
         year: 1725,
         duration: "10:00",
-        youtubeId: "QF2WrbP_8GA",
-        favourite: false
+        youtubeId: "QF2WrbP_8GA"
       },
       {
         id: uuidv4(),
@@ -241,8 +225,7 @@ export const moods = [
         genre: "Minimalista",
         year: 1978,
         duration: "10:07",
-        youtubeId: "lDi3oq0PTyQ",
-        favourite: false
+        youtubeId: "lDi3oq0PTyQ"
       },
       {
         id: uuidv4(),
@@ -251,8 +234,7 @@ export const moods = [
         genre: "Instrumental",
         year: 2011,
         duration: "8:00",
-        youtubeId: "UfcAVejslrU",
-        favourite: false
+        youtubeId: "UfcAVejslrU"
       },
       {
         id: uuidv4(),
@@ -261,8 +243,7 @@ export const moods = [
         genre: "Electrónica",
         year: 1978,
         duration: "47:00",
-        youtubeId: "6T7cMM27FuE",
-        favourite: false
+        youtubeId: "6T7cMM27FuE"
       }
     ]
   },
@@ -283,8 +264,7 @@ export const moods = [
         genre: "Pop",
         year: 2007,
         duration: "4:27",
-        youtubeId: "pyQtw6h6mhM",
-        favourite: false
+        youtubeId: "pyQtw6h6mhM"
       },
       {
         id: uuidv4(),
@@ -293,8 +273,7 @@ export const moods = [
         genre: "EDM",
         year: 2011,
         duration: "4:05",
-        youtubeId: "I0p48fbiFu8",
-        favourite: false
+        youtubeId: "I0p48fbiFu8"
       },
       {
         id: uuidv4(),
@@ -303,8 +282,7 @@ export const moods = [
         genre: "Funk/Pop",
         year: 2014,
         duration: "4:30",
-        youtubeId: "OPf0YbXqDm0",
-        favourite: false
+        youtubeId: "OPf0YbXqDm0"
       },
       {
         id: uuidv4(),
@@ -313,8 +291,7 @@ export const moods = [
         genre: "EDM",
         year: 2009,
         duration: "4:49",
-        youtubeId: "uSD4vsh1zDA",
-        favourite: false
+        youtubeId: "uSD4vsh1zDA"
       }
     ]
   },
@@ -335,8 +312,7 @@ export const moods = [
         genre: "Indie",
         year: 1965,
         duration: "2:05",
-        youtubeId: "Q_I5jpMtPqM",
-        favourite: false
+        youtubeId: "Q_I5jpMtPqM"
       },
       {
         id: uuidv4(),
@@ -345,8 +321,7 @@ export const moods = [
         genre: "Indie",
         year: 1983,
         duration: "3:59",
-        youtubeId: "vVQy9gPz3L4",
-        favourite: false
+        youtubeId: "vVQy9gPz3L4"
       },
       {
         id: uuidv4(),
@@ -355,8 +330,7 @@ export const moods = [
         genre: "Retro",
         year: 1973,
         duration: "3:30",
-        youtubeId: "rf0HhrDdd1I",
-        favourite: false
+        youtubeId: "rf0HhrDdd1I"
       },
       {
         id: uuidv4(),
@@ -365,8 +339,7 @@ export const moods = [
         genre: "Rock",
         year: 1984,
         duration: "3:34",
-        youtubeId: "9fNfM_Z3R7g",
-        favourite: false
+        youtubeId: "9fNfM_Z3R7g"
       }
     ]
   },
@@ -387,8 +360,7 @@ export const moods = [
         genre: "R&B",
         year: 2013,
         duration: "4:30",
-        youtubeId: "450p7goxZqg",
-        favourite: false
+        youtubeId: "450p7goxZqg"
       },
       {
         id: uuidv4(),
@@ -397,8 +369,7 @@ export const moods = [
         genre: "R&B",
         year: 2005,
         duration: "3:23",
-        youtubeId: "0habxsuXWbY",
-        favourite: false
+        youtubeId: "0habxsuXWbY"
       },
       {
         id: uuidv4(),
@@ -407,8 +378,7 @@ export const moods = [
         genre: "Pop",
         year: 2017,
         duration: "4:23",
-        youtubeId: "2Vv-BfVoq4g",
-        favourite: false
+        youtubeId: "2Vv-BfVoq4g"
       },
       {
         id: uuidv4(),
@@ -417,8 +387,7 @@ export const moods = [
         genre: "Pop",
         year: 1970,
         duration: "4:00",
-        youtubeId: "GlPLm0K4f94",
-        favourite: false
+        youtubeId: "GlPLm0K4f94"
       }
     ]
   },
@@ -445,8 +414,7 @@ export const moods = [
         genre: "Experimental",
         year: 1999,
         duration: "6:06",
-        youtubeId: "n2hTcrl0d2Q",
-        favourite: false
+        youtubeId: "n2hTcrl0d2Q"
       },
       {
         id: uuidv4(),
@@ -455,8 +423,7 @@ export const moods = [
         genre: "Hip Hop",
         year: 2013,
         duration: "3:08",
-        youtubeId: "krKpU6A4Xr4",
-        favourite: false
+        youtubeId: "krKpU6A4Xr4"
       },
       {
         id: uuidv4(),
@@ -465,8 +432,7 @@ export const moods = [
         genre: "World Music",
         year: 1988,
         duration: "6:18",
-        youtubeId: "bZJlNzpM4C4",
-        favourite: false
+        youtubeId: "bZJlNzpM4C4"
       },
       {
         id: uuidv4(),
@@ -475,8 +441,7 @@ export const moods = [
         genre: "Post-punk",
         year: 1984,
         duration: "5:45",
-        youtubeId: "WxGRf5qv9uA",
-        favourite: false
+        youtubeId: "WxGRf5qv9uA"
       }
     ]
   }

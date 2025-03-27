@@ -1,12 +1,12 @@
 import "./MoodSection.css";
-import React from "react";
 
 import StepBar from "../../atoms/StepBar/StepBar";
-import MoodCard from "../../molecules/MoodCard/MoodCard";
 import { moods } from "../../../data/moods";
+import MoodCard from "../../molecules/MoodCard/MoodCard";
 
 const MoodSection = () => {
   console.log("Render MoodSection");
+
   return (
     <>
       <StepBar>

@@ -1,4 +1,3 @@
-import SongsCard from "../../molecules/SongCard/SongCard";
 import "./Favourites.css";
 import React from "react";
 
