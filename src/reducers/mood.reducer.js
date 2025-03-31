@@ -1,4 +1,5 @@
 export const INITIAL_STATE = {
+  setInLocal: true,
   favourites: JSON.parse(localStorage.getItem("favourites") || "[]")
 };
 
@@ -6,7 +7,8 @@ export const types = {
   ADD_FAVOURITE: "ADD_FAVOURITE",
   REMOVE_FAVOURITE: "REMOVE_FAVOURITE",
   FILTER_MOOD: "FILTER_MOOD",
-  CLEAR_FAVOURITES: "CLEAR_FAVOURITE"
+  CLEAR_FAVOURITES: "CLEAR_FAVOURITES",
+  RESET_FAVOURITES: "RESET_FAVOURITES"
 };
 
 export const moodReducer = (state, action) => {
@@ -55,12 +57,23 @@ export const moodReducer = (state, action) => {
     case types.FILTER_MOOD:
       return {
         ...state,
+        setInLocal: false,
         favourites: state.favourites.filter((fav) => fav.id === mood.id)
       };
 
     case types.CLEAR_FAVOURITES:
       localStorage.removeItem("favourites");
-      return INITIAL_STATE;
+      return {
+        ...state,
+        setInLocal: true,
+        favourites: []
+      };
+
+    case types.RESET_FAVOURITES:
+      return {
+        ...state,
+        favourites: JSON.parse(localStorage.getItem("favourites") || "[]")
+      };
 
     default:
       return state;

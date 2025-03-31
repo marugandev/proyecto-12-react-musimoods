@@ -8,9 +8,7 @@
   height: 100%;
   background-color: var(--mo-color-grey-light);
   z-index: 99;
-
   opacity: 0;
-  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
 }
 
 .menu.open {
@@ -29,7 +27,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: var(--mo-gap-md);
+  gap: var(--mo-gap-xl);
   width: 100%;
   height: 100%;
 }
@@ -43,9 +41,8 @@
   color: var(--mo-color-black);
   font-family: var(--mu-font-family-primary);
   font-size: var(--mo-font-size-3xl);
-  transition: opacity 1s ease-in-out;
 }
 
 .menu-link:hover {
-  opacity: 0;
+  color: var(--mo-color-grey-medium);
 }

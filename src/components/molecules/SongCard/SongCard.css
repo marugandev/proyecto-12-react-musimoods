@@ -19,6 +19,7 @@
   flex-wrap: wrap;
   gap: var(--mo-gap-xs);
   padding: var(--mo-padding-md);
+  font-family: var(--mu-font-family-secondary);
 }
 
 .song-card-button {

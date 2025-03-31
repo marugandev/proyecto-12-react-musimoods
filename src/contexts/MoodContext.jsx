@@ -7,7 +7,8 @@ export const MoodProvider = ({ children }) => {
   const [state, dispatch] = useReducer(moodReducer, INITIAL_STATE);
 
   useEffect(() => {
-    localStorage.setItem("favourites", JSON.stringify(state.favourites));
+    if (state.setInLocal)
+      localStorage.setItem("favourites", JSON.stringify(state.favourites));
   }, [state.favourites]);
 
   return (

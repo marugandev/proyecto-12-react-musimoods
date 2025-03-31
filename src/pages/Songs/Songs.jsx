@@ -29,7 +29,9 @@ const Songs = () => {
         <strong style={{ backgroundColor: color }}>{name}</strong> → mood →{" "}
         <strong style={{ backgroundColor: color }}>{name}</strong> →
       </StepBar>
-      <SongCard mood={mood}></SongCard>
+      <ul className="song-card-list">
+        <SongCard mood={mood}></SongCard>
+      </ul>
     </section>
   );
 };

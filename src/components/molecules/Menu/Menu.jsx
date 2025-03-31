@@ -13,7 +13,7 @@ const Menu = ({ isOpen, closeMenu }) => {
   }, [isOpen]);
 
   return (
-    <section className={`menu  ${isOpen ? "open" : ""}`}>
+    <section className={`menu ${isOpen ? "open" : null}`}>
       <nav className="menu-nav">
         <ul className="menu-list">
           {routesMenu.map((r) => (

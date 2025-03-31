@@ -3,10 +3,18 @@
   padding: var(--mo-padding-sm) var(--mo-padding-md);
   border: none;
   cursor: pointer;
-  /* border-radius: var(--mo-border-radius-md); */
+  color: var(--mo-color-black);
+  background-color: var(--mo-color-grey-light);
+  border: 2px solid var(--mo-color-grey-light);
 }
 
 .button.secondary {
   color: var(--mo-color-background);
   background-color: var(--mo-color-primary);
+  border: 2px solid var(--mo-color-black);
+}
+
+.button.tertiary {
+  background-color: transparent;
+  border: 2px solid var(--mo-color-black);
 }

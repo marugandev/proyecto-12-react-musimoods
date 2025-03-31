@@ -1,0 +1,26 @@
+.dialog-favourites {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+}
+
+.dialog-favourites-form {
+  font-family: var(--mu-font-family-secondary);
+  padding: var(--mo-padding-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--mo-padding-md);
+}
+
+.dialog-favourites-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: var(--mo-padding-xs);
+}
+
+.dialog-button {
+  width: 100%;
+}

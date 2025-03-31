@@ -2,13 +2,28 @@
   color: var(--mo-color-primary);
   font-family: var(--mu-font-family-primary);
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   gap: var(--mo-gap-md);
   text-wrap: balance;
 }
 
+.about-image {
+  background-image: url("/public/assets/images/silhouette_with_headphones.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 70svh;
+  width: 100%;
+}
+
 .about-description {
   font-family: var(--mu-font-family-secondary);
+  color: var(--mo-color-white);
+  display: flex;
+  flex-direction: column;
+  padding: var(--mo-padding-md);
 }
 
 .about-description-span {

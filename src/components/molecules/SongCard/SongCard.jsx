@@ -14,7 +14,7 @@ const SongCard = ({ mood }) => {
   };
 
   return (
-    <ul className="song-card-list">
+    <>
       {mood.songs.map((song) => (
         <li
           key={song.id}
@@ -61,7 +61,7 @@ const SongCard = ({ mood }) => {
           />
         </li>
       ))}
-    </ul>
+    </>
   );
 };
 
