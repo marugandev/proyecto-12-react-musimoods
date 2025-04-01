@@ -5,8 +5,6 @@ import { moods } from "../../../data/moods";
 import MoodCard from "../../molecules/MoodCard/MoodCard";
 
 const MoodSection = () => {
-  console.log("Render MoodSection");
-
   return (
     <>
       <StepBar>
@@ -15,11 +13,12 @@ const MoodSection = () => {
         <strong>musimoOds</strong> → Elige tu mood → Disfruta →{" "}
         <strong>musimoOds</strong> → Elige tu mood → Disfruta →{" "}
         <strong>musimoOds</strong> → Elige tu mood → Disfruta →{" "}
-        <strong>musimoOds</strong> →
+        <strong>musimoOds</strong> → Elige tu mood → Disfruta →{" "}
+        <strong>musimoOds</strong>
       </StepBar>
       <section className="mood-section page-enter-animation">
         {moods?.map((mood) => (
-          <MoodCard mood={mood} key={mood.id}></MoodCard>
+          <MoodCard key={mood.id} mood={mood}></MoodCard>
         ))}
       </section>
     </>

@@ -106,14 +106,6 @@
   --mo-mood-color-mysterious-arrow: var(--mo-color-white);
 }
 
-/*  [data-theme="dark"] {
-    --mo-color-primary: var(--mo-color-white);
-    --mo-color-background: var(--mo-color-black);
-    --mo-color-secondary-bg: var(--mo-color-gray-medium);
-    --mo-color-border: var(--mo-color-gray-light);
-    --mo-color-text-secondary: var(--mo-color-gray-light);
-  } */
-
 * {
   margin: 0;
   padding: 0;

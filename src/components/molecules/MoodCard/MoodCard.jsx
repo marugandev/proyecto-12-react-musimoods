@@ -3,8 +3,6 @@ import "./MoodCard.css";
 import { NavLink } from "react-router-dom";
 
 const MoodCard = ({ mood }) => {
-  console.log("Render MoodCard");
-
   const { img, name, color, description } = mood;
 
   return (

@@ -1,4 +1,3 @@
-import React, { Fragment } from "react";
 import "./MainLayout.css";
 
 import Header from "../organisms/Header/Header";

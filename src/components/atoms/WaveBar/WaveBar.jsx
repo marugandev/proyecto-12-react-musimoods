@@ -2,7 +2,6 @@ import "./WaveBar.css";
 import React from "react";
 
 const WaveBar = () => {
-  /*  console.log("Render Bar"); */
   return (
     <div className="wave-bar-container">
       {[...Array(3)].map((_, i) => (

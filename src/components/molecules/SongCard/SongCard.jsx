@@ -5,12 +5,12 @@ import { useMood } from "../../../contexts/moodContext";
 import { types } from "../../../reducers/mood.reducer";
 
 const SongCard = ({ mood }) => {
-  console.log("Render SongCard");
-
   const { state, dispatch } = useMood();
 
-  const isFavourite = (songId) => {
-    return state.favourites.some((m) => m.songs.some((s) => s.id === songId));
+  const isFavourite = (songName) => {
+    return state.favourites.some((m) =>
+      m.songs.some((s) => s.name === songName)
+    );
   };
 
   return (
@@ -39,11 +39,11 @@ const SongCard = ({ mood }) => {
           </figcaption>
           <Button
             className={`song-card-button ${
-              isFavourite(song.id) ? "" : "secondary"
+              isFavourite(song.name) ? "" : "secondary"
             }`}
-            text={`${isFavourite(song.id) ? "- Favorito" : "+ Favorito"}`}
+            text={`${isFavourite(song.name) ? "- Favorito" : "+ Favorito"}`}
             onClick={() => {
-              isFavourite(song.id)
+              isFavourite(song.name)
                 ? dispatch({
                     type: types.REMOVE_FAVOURITE,
                     payload: {

@@ -571,7 +571,7 @@ export const moods = [
       {
         id: uuidv4(),
         name: "Leaf And Stream",
-        artist: "Wishbone Ash",
+        artist: "Wishbone Ash - Leaf And Stream",
         genre: "Alternativa",
         year: 2015,
         duration: "4:06",
@@ -588,12 +588,12 @@ export const moods = [
       },
       {
         id: uuidv4(),
-        name: "Latte e Miele",
-        artist: "Menestrello",
-        genre: "Retro",
-        year: 1976,
-        duration: "5:15",
-        youtubeId: "UhnjD6PXPe4"
+        name: "",
+        artist: "",
+        genre: "",
+        year: 2,
+        duration: "",
+        youtubeId: "https://youtu.be/UhnjD6PXPe4"
       }
     ]
   },

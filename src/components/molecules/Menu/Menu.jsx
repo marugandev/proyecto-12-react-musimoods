@@ -1,12 +1,11 @@
 import "./Menu.css";
+
 import React, { useEffect } from "react";
 
 import { routesMenu } from "../../../routes/routesMenu";
 import { NavLink } from "react-router-dom";
 
 const Menu = ({ isOpen, closeMenu }) => {
-  console.log("Render Menu");
-
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
     return () => (document.body.style.overflow = "");

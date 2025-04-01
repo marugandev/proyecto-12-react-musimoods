@@ -18,10 +18,12 @@ export const moodReducer = (state, action) => {
   switch (action.type) {
     case types.ADD_FAVOURITE:
       updatedFavourites = [...state.favourites];
-      const existingMood = updatedFavourites.find((m) => m.id === mood.id);
+      const existingMood = updatedFavourites.find((m) => m.name === mood.name);
 
       if (existingMood) {
-        const existingSong = existingMood.songs.some((s) => s.id === song.id);
+        const existingSong = existingMood.songs.some(
+          (s) => s.name === song.name
+        );
         if (!existingSong) {
           existingMood.songs.push(song);
         }
@@ -43,7 +45,7 @@ export const moodReducer = (state, action) => {
       updatedFavourites = state.favourites
         .map((m) => ({
           ...m,
-          songs: m.songs.filter((s) => s.id !== song.id)
+          songs: m.songs.filter((s) => s.name !== song.name)
         }))
         .filter((m) => m.songs.length > 0);
 

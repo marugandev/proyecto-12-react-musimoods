@@ -1,4 +1,5 @@
 .step-bar {
+  max-width: 100%;
   position: sticky;
   top: 0;
   z-index: 2;
@@ -10,7 +11,7 @@
 }
 
 .step-bar-text {
-  width: fit-content;
+  line-height: var(--mo-line-height-md);
   display: inline-block;
   white-space: nowrap;
   font-family: var(--mu-font-family-secondary);

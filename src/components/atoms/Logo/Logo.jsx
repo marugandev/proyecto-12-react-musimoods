@@ -1,11 +1,10 @@
 import "./Logo.css";
-import React from "react";
+import React, { memo } from "react";
 
 import { NavLink } from "react-router-dom";
 import WaveBar from "../WaveBar/WaveBar";
 
-const Logo = () => {
-  console.log("Render logo");
+const Logo = memo(() => {
   return (
     <>
       <div className="logo-container">
@@ -16,6 +15,6 @@ const Logo = () => {
       </div>
     </>
   );
-};
+});
 
 export default Logo;

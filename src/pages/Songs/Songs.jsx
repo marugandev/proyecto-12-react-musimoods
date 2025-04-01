@@ -7,8 +7,6 @@ import StepBar from "../../components/atoms/StepBar/StepBar";
 import SongCard from "../../components/molecules/SongCard/SongCard";
 
 const Songs = () => {
-  console.log("Render MoodSongs");
-
   const { moodName } = useParams();
 
   const mood = moods.find((m) => m.name === moodName);

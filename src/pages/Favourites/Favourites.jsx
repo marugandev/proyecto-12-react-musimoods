@@ -25,10 +25,6 @@ const Favourites = () => {
     }
   };
 
-  /*   const handleConfirmDelete = () => {
-    onClick={() => dispatch({ type: types.CLEAR_FAVOURITES })}
-  }; */
-
   return (
     <section className="favourites page-enter-animation">
       {state.favourites.length === 0 ? (
