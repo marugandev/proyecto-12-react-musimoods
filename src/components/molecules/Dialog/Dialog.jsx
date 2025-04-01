@@ -1,7 +1,7 @@
 import "./Dialog.css";
 
 import { forwardRef, useImperativeHandle, useRef } from "react";
-import { useMood } from "../../../contexts/moodContext";
+import { useMood } from "../../../contexts/MoodContext";
 import Button from "../../atoms/Button/Button";
 import { types } from "../../../reducers/mood.reducer";
 

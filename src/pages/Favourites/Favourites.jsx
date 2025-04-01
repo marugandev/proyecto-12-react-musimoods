@@ -1,6 +1,6 @@
 import "./Favourites.css";
 
-import { useMood } from "../../contexts/moodContext";
+import { useMood } from "../../contexts/MoodContext";
 import { useRef } from "react";
 import { types } from "../../reducers/mood.reducer";
 import ErrorAlert from "../../components/molecules/ErrorAlert/ErrorAlert";

@@ -1,7 +1,7 @@
 import "./SongCard.css";
 
 import Button from "../../atoms/Button/Button";
-import { useMood } from "../../../contexts/moodContext";
+import { useMood } from "../../../contexts/MoodContext";
 import { types } from "../../../reducers/mood.reducer";
 
 const SongCard = ({ mood }) => {
