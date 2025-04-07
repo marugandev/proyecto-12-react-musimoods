@@ -12,7 +12,7 @@ const Menu = ({ isOpen, closeMenu }) => {
   }, [isOpen]);
 
   return (
-    <section className={`menu ${isOpen ? "open" : null}`}>
+    <section className={`menu ${isOpen ? "open page-enter-animation" : null}`}>
       <nav className="menu-nav">
         <ul className="menu-list">
           {routesMenu.map((r) => (
