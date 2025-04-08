@@ -1,8 +1,8 @@
 import "./StepBar.css";
 
-const StepBar = ({ children }) => {
+const StepBar = ({ className, children }) => {
   return (
-    <div className="step-bar">
+    <div className={`step-bar ${className}`}>
       <span className="step-bar-text">{children}</span>
     </div>
   );

@@ -12,6 +12,15 @@
   align-items: start;
 }
 
+.song-card-wrapper-modal {
+  width: 100%;
+  cursor: pointer;
+}
+
+.song-card-iframe {
+  pointer-events: none;
+}
+
 .song-card-figcaption {
   display: flex;
   flex-direction: row;

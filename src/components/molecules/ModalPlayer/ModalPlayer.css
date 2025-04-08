@@ -1,0 +1,50 @@
+.modal-player-overlay {
+  max-width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--mo-gap-xs);
+}
+
+.modal-player {
+  display: flex;
+  flex-direction: column;
+  gap: var(--mo-gap-xs);
+  padding: var(--mo-padding-md);
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+}
+.buttons-modal-player-container {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.step-bar.stepbar-modal-player {
+  margin-bottom: 0;
+  width: 100%;
+  margin-bottom: 0;
+  color: var(--mo-color-white);
+  background-color: var(--mo-color-black);
+}
+
+.button.modal-player-button-close {
+  padding: 0 var(--mo-padding-xs);
+  font-family: var(--mu-font-family-secondary);
+}
+
+@media (max-width: 460px) {
+  .buttons-modal-player-container {
+    width: 60%;
+  }
+  .modal-player iframe {
+    width: 60%;
+    height: 234px;
+  }
+}
